@@ -29,7 +29,7 @@ colcon build
 **5. Активировать окружение**
 
 ```bash
-source install/setup.szh
+source install/setup.zsh
 ```
 **6. Запустить launch-файл с переназначенными переменными**
 
