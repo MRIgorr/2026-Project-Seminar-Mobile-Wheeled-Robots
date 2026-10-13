@@ -1,0 +1,195 @@
+#VRML_SIM R2025a utf8
+# license: Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+# license url: https://cyberbotics.com/webots_assets_license
+# documentation url: https://webots.cloud/run?url=https://github.com/cyberbotics/webots/blob/released/projects/samples/tutorials/protos/FourWheelsRobot.proto
+
+PROTO FirstDigit [
+  field SFVec3f translation 0 0 0
+  field SFVec3f size 0.5 0.5 0.5
+  field SFRotation rotation 1 0 0 -1.5708
+  field SFColor color 0.5 0.5 0.5
+  field SFString  name "FirstNumber"
+]
+{
+  Solid {
+  name IS name
+  translation IS translation
+  rotation IS rotation
+  children [
+    Transform { 
+      translation 0.0 0.0 0.25
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor IS color
+            roughness 1
+            metalness 0
+          }
+          geometry DEF BOX Box {
+            size IS size
+          }
+        }
+      ]
+    }
+    Transform { 
+      translation -0.5 0.0 0.25
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor IS color
+            roughness 1
+            metalness 0
+          }
+          geometry USE BOX
+        }
+      ]
+    }
+    Transform { 
+      translation 0.5 0.0 0.75
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor IS color
+            roughness 1
+            metalness 0
+          }
+          geometry USE BOX
+        }
+      ]
+    }
+    Transform { 
+      translation 0.5 0.0 1.25
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor IS color
+            roughness 1
+            metalness 0
+          }
+          geometry USE BOX
+        }
+      ]
+    }
+    Transform { 
+      translation 0.5 0.0 0.25
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor IS color
+            roughness 1
+            metalness 0
+          }
+          geometry USE BOX
+        }
+      ]
+    }
+    Transform { 
+      translation 0.5 0.0 1.75
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor IS color
+            roughness 1
+            metalness 0
+          }
+          geometry USE BOX
+        }
+      ]
+    }
+    Transform { 
+      translation 0.5 0.0 2.25
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor IS color
+            roughness 1
+            metalness 0
+          }
+          geometry USE BOX
+        }
+      ]
+    }
+    Transform { 
+      translation 0.0 0.0 2.25
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor IS color
+            roughness 1
+            metalness 0
+          }
+          geometry USE BOX
+        }
+      ]
+    }
+    Transform { 
+      translation -0.5 0.0 2.25
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor IS color
+            roughness 1
+            metalness 0
+          }
+          geometry USE BOX
+        }
+      ]
+    }
+    Transform { 
+      translation -0.5 0.0 1.75
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor IS color
+            roughness 1
+            metalness 0
+          }
+          geometry USE BOX
+        }
+      ]
+    }
+    Transform { 
+      translation -0.5 0.0 1.25
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor IS color
+            roughness 1
+            metalness 0
+          }
+          geometry USE BOX
+        }
+      ]
+    }
+    Transform { 
+      translation -0.5 0.0 0.75
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor IS color
+            roughness 1
+            metalness 0
+          }
+          geometry USE BOX
+        }
+      ]
+    }
+  ]
+  boundingObject Group {
+    children [
+      Transform { translation 0.0 0.0 0.25 children [ USE BOX ] }
+      Transform { translation -0.5 0.0 0.25 children [ USE BOX ] }
+      Transform { translation 0.5 0.0 0.25 children [ USE BOX ] }
+      Transform { translation 0.5 0.0 0.75 children [ USE BOX ] }
+      Transform { translation 0.5 0.0 1.25 children [ USE BOX ] }
+      Transform { translation 0.5 0.0 1.75 children [ USE BOX ] }
+      Transform { translation 0.5 0.0 2.25 children [ USE BOX ] }
+      Transform { translation 0.0 0.0 2.25 children [ USE BOX ] }
+      Transform { translation -0.5 0.0 2.25 children [ USE BOX ] }
+      Transform { translation -0.5 0.0 1.75 children [ USE BOX ] }
+      Transform { translation -0.5 0.0 1.25 children [ USE BOX ] }
+      Transform { translation -0.5 0.0 0.75 children [ USE BOX ] }
+    ]
+  }
+}
+}
