@@ -1,0 +1,9 @@
+{
+  "run_name": "global_12000",
+  "duration": 240.0,
+  "pos_threshold": 0.2,
+  "yaw_threshold": 0.15,
+  "confirm_duration": 10.0,
+  "convergence_time": 65.60000000000001,
+  "samples": 2381
+}
