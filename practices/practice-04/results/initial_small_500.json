@@ -1,0 +1,9 @@
+{
+  "run_name": "initial_small_500",
+  "duration": 240.0,
+  "pos_threshold": 0.2,
+  "yaw_threshold": 0.15,
+  "confirm_duration": 10.0,
+  "convergence_time": 1.28,
+  "samples": 2394
+}
